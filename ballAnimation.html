@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ball Animation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        height: 60vh;
+        width: 100vw;
+        background-color: aqua;
+        display: flex;
+        align-items: end;
+        border-bottom: 2px solid;
+      }
+      .ball {
+        height: 50px;
+        width: 50px;
+        background-color: red;
+        border: 1px solid;
+        border-radius: 50%;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: Xaxis 7s linear  infinite;
+      }
+      .move{
+        animation: Yaxis 1s cubic-bezier(0.26, 0.67, 0.9, 1.04) infinite alternate;
+      }
+      @keyframes Xaxis {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(100vw);
+        }
+      }
+      @keyframes Yaxis {
+        from {
+          transform: translateY(0);
+        }
+        to {
+          transform: translateY(-30vh);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+            <div class="move">
+                <div class="ball"></div>
+            </div>
+    </div>
+  </body>
+</html>
