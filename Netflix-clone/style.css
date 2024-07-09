@@ -7,11 +7,12 @@
     background-color: rgba(0, 0, 0, 0.863);
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 8px;
 }
 .first{
     height: 84.9vh;
-    width: 100vw;
+    width: 100%;
     background-image: url("Images/1stbackground.jpg");
     background-repeat: no-repeat;
     /* filter:brightness(0.7); */
@@ -131,7 +132,7 @@ nav{
 }
 .minipage{
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     background-color: black;
     background-repeat: no-repeat;
